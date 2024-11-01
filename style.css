@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+.container{
+    width: 1100px;
+    background-color: white;
+}
+.menu{
+    display: grid;
+    grid-template-columns: 60% repeat(6, 8%);
+    padding-bottom: 15px;
+    color: hsl(233, 8%, 79%);
+}
+.container2{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+.cont2{
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+.text{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-top: 65px;
+}
+.but p{
+    color: hsl(233, 8%, 79%);
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+button{
+    width: 150px;
+    height: 40px;
+    background-color: hsl(5, 85%, 63%);
+    border: none;
+    letter-spacing: 5px;
+    font-weight: 700;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 300px;
+    height: 400px;
+    background-color: hsl(240, 100%, 5%);
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+    line-height: 20px;
+}
+.box h1{
+    color: hsl(35, 91%, 59%);
+}
+.box p{
+    color: hsl(233, 8%, 79%);
+}
+.img-text{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    line-height: 30px;
+}
+.img-text h2{
+    color: hsl(5, 98%, 61%);
+}
+.img-text p{
+    color: hsl(233, 8%, 79%);
+}
+.one{
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+.two{
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+.three{
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+
+@media only screen and (max-width: 768px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .menu{
+        display: none;
+    }
+    .menu img{
+        content: url(assets/images/image-web-3-mobile.jpg);
+    }
+    .container2{
+        display: flex;
+        flex-direction: column;
+    }
+    .cont22{
+        display: flex;
+        flex-direction: column;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        margin-left: 175px;
+    }
+    .img-text{
+        display: flex;
+        flex-direction: column;
+    }
+    .box{
+        margin-left: 175px;
+        width: 330px;
+    }
+}
